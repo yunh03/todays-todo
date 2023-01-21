@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todays To-Do!</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css">
+</head>
+<body>
+    <section class="screen-center">
+        <div class="t-items">
+            <h1>
+                <span class="t-items-now" id="get_current"></span>
+                <span id="get_current_time"></span>
+            </h1>
+            <div class="t-todo">
+                <input class="t-input" onkeyup="enterkey()" id="t-input" placeholder="What are you going to do today?">
+                <p>할 일을 끝냈다면, 클릭하여 완료하세요<em>!</em></p>
+                <ul class="t-todo-list" id="t-todo-list">
+                  </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
