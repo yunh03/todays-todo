@@ -10,7 +10,10 @@ function time() {
   // Hours
   if (h >= 12) {
     h -= 12;
-  } else if (h <= 12) {
+  } else if(h >= 12 && h <= 12) {
+    h = "0" + h - 12;
+  }
+  if (h <= 12) {
     h = "0" + h;
   }
   // Minutes
