@@ -16,6 +16,9 @@ function time() {
   if (h <= 12) {
     h = "0" + h;
   }
+  if(h == 10) {
+    h = 10;
+  }
   // Minutes
   if (m <= 9) {
     m = "0" + m;
